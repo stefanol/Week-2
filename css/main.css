@@ -1,0 +1,67 @@
+/*sets a variable for colour, font*/
+/*mixins*/
+.roundedbutton {
+  border-radius: 10px;
+  background: #2980b9;
+  color: #fff;
+}
+h1 {
+  font-size: 63px;
+}
+h2 {
+  font-size: 31.5px;
+}
+body {
+  font-family: Copperplate, "Copperplate Gothic Light", fantasy;
+  font-size: 21px;
+  color: #34495e;
+  font-weight: 300px;
+  text-decoration: underline;
+  line-height: 42px;
+}
+header {
+  background-color: #cccccc;
+}
+header nav {
+  background-color: red;
+}
+header nav ul {
+  list-style-type: none;
+}
+header nav ul li {
+  display: inline;
+  margin-right: 15px;
+}
+header nav ul li:last-child {
+  margin-right: 0px;
+}
+header nav ul linth-child(2) {
+  color: red;
+}
+a {
+  color: #000;
+}
+a:hover {
+  text-decoration: none;
+}
+section {
+  width: 800px;
+  background-color: green;
+}
+section article header {
+  width: 400px;
+}
+section article header h2 {
+  font-size: 32px;
+}
+section article p button[type="submit"] {
+  border-radius: 10px;
+  background: #2980b9;
+  color: #fff;
+  padding: 5px 2px;
+}
+footer .mysquare {
+  width: 45px;
+  height: 45px;
+  background-color: #000;
+}

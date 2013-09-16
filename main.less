@@ -1,0 +1,91 @@
+@blue: #2980b9;
+@basefont: 21px;
+/*sets a variable for colour, font*/
+
+/*mixins*/
+
+.square(@size) {
+	width: @size;
+	height: @size;
+}
+
+.roundedbutton {
+	border-radius: 10px;
+	background: @blue;
+	color: #fff;
+}
+
+.fontstyle(@fontcolor) {
+	font-family: Copperplate, "Copperplate Gothic Light", fantasy;
+	font-size: @basefont;
+	color: @fontcolor;
+	font-weight: 300px;
+	text-decoration: underline;
+	line-height: 42px;
+}
+
+h1 {
+	font-size: @basefont * 3;
+}
+
+h2 {
+	font-size: @basefont * 1.5;
+}
+
+body {
+	font-size: @basefont;
+	.fontstyle(#34495e);
+}
+
+header {
+	background-color: lighten(#000, 80%);
+	nav {
+		background-color: red;
+		ul {
+			list-style-type: none;
+			li {
+				display: inline;
+				margin-right: 15px;
+				&:last-child {
+					margin-right: 0px;
+				}
+				&nth-child(2) {
+					color: red;
+				}
+			}
+		}
+	}
+}
+
+a {
+	color: #000;
+	&:hover {
+	text-decoration: none;
+	}
+}
+
+section {
+	width: 800px;
+	background-color: green;
+	article {
+		header {
+			width: 400px;
+			h2 {
+				font-size: 32px;
+			}
+		}
+		p {
+			button[type="submit"] {
+				.roundedbutton;
+				padding: 5px 2px;
+			}
+		}
+	}
+}
+
+footer {
+	.mysquare {
+		.square(45px);
+		background-color: #000;
+	}
+}
